@@ -1,0 +1,24 @@
+/* todos os paragrafos dentro do main*/
+main p {
+    background: red;
+}
+
+/*o pargrafo 'filho' do main, não servem os netos*/
+main > p {
+    background: red; 
+}
+
+/*o paragrafo que vem LOGO após uma imagem*/
+img + p { 
+    background: blue;
+}
+
+/*todos os parágrafos após uma imagem*/
+img ~ p {
+    background: yellow
+} 
+
+/*todos os paragrafos da classe principal menos com o ID missão*/
+.principal p:not(#missao) {
+    background: orange;
+}
